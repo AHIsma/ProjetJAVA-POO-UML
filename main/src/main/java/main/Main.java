@@ -27,7 +27,7 @@ public abstract class Main {
 		final Controller controller = new Controller(view, model);
 		view.setController(controller);
 		// TEST VITE FAIT DU COMMIT
-		System.out.println("Test du COMMIT de mort");
+		System.out.println("Test du COMMIT de mort de merde");
 
 		controller.control();
 		controller.orderPerform(ControllerOrder.English);
