@@ -1,5 +1,6 @@
 package view;
 
+import fr.exia.showboard.*;
 import java.awt.event.KeyEvent;
 
 import javax.swing.SwingUtilities;
