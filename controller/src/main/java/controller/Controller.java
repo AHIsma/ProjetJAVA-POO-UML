@@ -12,8 +12,8 @@ import contract.IView;
  */
 public final class Controller implements IController {
 
-	/** The map */ 
-	private Environment ;
+	/** The map */
+	private Environment;
 
 	/** The view. */
 	private IView view;
@@ -77,11 +77,11 @@ public final class Controller implements IController {
 	@Override
 	public void orderPerform(final ControllerOrder controllerOrder) {
 		switch (controllerOrder) {
-		case English:
-			this.model.loadHelloWorld("GB");
+		case UP:
+			this.pushUp;
 			break;
-		case Francais:
-			this.model.loadHelloWorld("FR");
+		case DOWN:
+			this.pushDown;
 			break;
 		case Deutsch:
 			this.model.loadHelloWorld("DE");
