@@ -40,6 +40,7 @@ public class Player extends Character implements Playerable {
 		this.setY(this.getY());
 	}
 
+//teststeststes commit
 	@Override
 	public void die() {
 		this.setAlive(false);
