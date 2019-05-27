@@ -83,8 +83,8 @@ public final class Controller implements IController {
 		case DOWN:
 			this.pushDown;
 			break;
-		case Deutsch:
-			this.model.loadHelloWorld("DE");
+		case RIGHT:
+			this.pushRight;
 			break;
 		case Indonesia:
 			this.model.loadHelloWorld("ID");
