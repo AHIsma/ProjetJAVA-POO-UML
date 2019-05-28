@@ -1,19 +1,18 @@
 package controller;
 
-import org.omg.CORBA.Environment;
-
 import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
 import contract.IView;
+import model.mobile.Player;
 
 /**
  * The Class Controller.
  */
 public final class Controller implements IController {
 
+	private Player player;
 	/** The map */
-	private Environment;
 
 	/** The view. */
 	private IView view;
@@ -78,16 +77,16 @@ public final class Controller implements IController {
 	public void orderPerform(final ControllerOrder controllerOrder) {
 		switch (controllerOrder) {
 		case UP:
-			this.pushUp();
+			this.player.pushUp();
 			break;
 		case DOWN:
-			this.pushDown();
+			this.player.pushDown();
 			break;
 		case RIGHT:
-			this.pushRight();
+			this.player.pushRight();
 			break;
 		case LEFT:
-			this.pushLeft();
+			this.player.pushLeft();
 			break;
 		default:
 			break;

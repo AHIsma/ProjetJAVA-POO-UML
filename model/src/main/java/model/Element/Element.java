@@ -1,10 +1,17 @@
 package model.Element;
 
+import contract.IController;
+import contract.IView;
+
 public abstract class Element implements IElement {
 
 	private Permeability permeability;
 
 	private Sprite sprite;
+
+	private IController controlleur;
+
+	private IView view;
 
 	private int x;
 
@@ -45,5 +52,8 @@ public abstract class Element implements IElement {
 	@Override
 	public Permeability getPermeability() {
 		return this.permeability;
+	}
+
+	public void pushUp() {
 	}
 }
