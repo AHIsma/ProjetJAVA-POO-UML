@@ -9,6 +9,6 @@ public class Enemy implements Enemyable {
 
 	public void move() {
 
-		
+		// test
 	}
 }
